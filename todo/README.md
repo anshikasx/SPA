@@ -1,16 +1,50 @@
-# React + Vite
+# 📝 Todo App (Single Page Application)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **Todo List Single Page Application (SPA)** built using **HTML, CSS, and JavaScript**.  
+The app allows users to manage daily tasks efficiently without reloading the page.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Instant UI updates (SPA behavior)
+- Clean and simple user interface
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- HTML5  
+- CSS3  
+- JavaScript (React JS)
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+todo/
+├── index.html    # Main HTML file
+├── style.css     # Styling for the app
+├── script.js     # JavaScript logic
+└── README.md     # Project documentation
+
+## ▶️ How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anshikasx/SPA.git
+
+2. Navigate to the todo folder:
+   ```bash
+   cd SPA/todo
+
+3.	Open index.html in your browser.
+
+## 📌 How to Use
+
+1.	Enter a task in the input field.
+2.	Click the Add button (or press Enter).
+3.	Mark a task as completed when done.
+4.	Delete tasks you no longer need.
+
+## 🎯 Purpose of the Project
+	•	Practice JavaScript DOM manipulation
+	•	Understand Single Page Application concepts
+	•	Improve frontend development skills
