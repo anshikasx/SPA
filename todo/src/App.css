@@ -1,0 +1,195 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* --- Global & Container Styles (Focus: Clean and Elevated) --- */
+body {
+  font-family: 'Inter', sans-serif; /* Modern, readable font */
+  background-color: #eef1f5; /* Very light, cool gray background */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.todo-container {
+  background: #ffffff; /* Pure white card */
+  padding: 35px;
+  border-radius: 16px; /* Increased rounding for a softer look */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Deeper, softer shadow */
+  max-width: 550px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.todo-header h1 {
+  text-align: center;
+  color: #2c3e50; /* Dark, professional text */
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* --- Input Area Styles (Focus: Seamless Integration) --- */
+.input-area {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.task-input {
+  flex-grow: 1;
+  padding: 14px 18px;
+  border: 1px solid #dcdfe6; 
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.task-input:focus {
+  border-color: #6c5ce7; /* Primary purple on focus */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
+}
+
+.add-button {
+  padding: 10px 25px;
+  background-color: #6c5ce7; /* Primary aesthetic color (Deep Purple) */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 0 4px 8px rgba(108, 92, 231, 0.4);
+}
+
+.add-button:hover {
+  background-color: #5b4dd6;
+}
+
+.add-button:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+/* --- List & Item Styles (Focus: Clarity and Feedback) --- */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  margin-bottom: 12px;
+  background: #f7f9fb; /* Very light background for items */
+  border-left: 5px solid transparent; /* Accent border for status */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s, border-left-color 0.3s;
+}
+
+.task-item:hover {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.task-text {
+  flex-grow: 1;
+  padding-right: 15px;
+  font-size: 16px;
+  color: #34495e;
+  cursor: pointer;
+  transition: color 0.3s, text-decoration 0.3s;
+  font-weight: 500;
+}
+
+.task-text.completed {
+  color: #95a5a6; /* Soft gray for completed text */
+  text-decoration: line-through;
+  font-style: italic; 
+}
+
+/* Completed Item Visual Feedback */
+.task-item .task-text.completed + .delete-button {
+  /* Slightly less intense delete button for completed items */
+  opacity: 0.7; 
+}
+.task-item:has(.task-text.completed) {
+  border-left-color: #2ecc71; /* Green accent border */
+  background-color: #f0fff0; /* Very light green hint */
+}
+
+
+.delete-button {
+  background-color: #ff6b6b; /* Soft red for danger */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #ee5253;
+}
+
+/* --- Empty Message Style --- */
+.empty-message {
+  text-align: center;
+  color: #95a5a6;
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 15px;
+  border: 1px dashed #dcdfe6;
+  border-radius: 8px;
+}
