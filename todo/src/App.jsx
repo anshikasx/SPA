@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Import the custom styles
+import './App.css'; 
 
 function App() {
-  // 1. INITIAL STATE: Load data from Local Storage or use an empty array
+  
   const [todos, setTodos] = useState(() => {
     const savedTodos = localStorage.getItem('react-todo-list');
     if (savedTodos) {
@@ -13,12 +13,12 @@ function App() {
   
   const [inputValue, setInputValue] = useState('');
 
-  // 2. SIDE EFFECT: Save to Local Storage whenever 'todos' changes
+  
   useEffect(() => {
     localStorage.setItem('react-todo-list', JSON.stringify(todos));
   }, [todos]); 
 
-  // --- Handlers (Logic) ---
+ 
 
   const addTodo = () => {
     if (inputValue.trim() === '') return;
@@ -45,7 +45,7 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
-  // --- Component Structure (JSX) ---
+  
 
   return (
     <div className="todo-container">
