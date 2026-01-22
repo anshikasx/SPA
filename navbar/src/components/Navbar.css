@@ -1,0 +1,115 @@
+/* Universal Fix */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* NAVBAR MAIN */
+  .navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #0f172a, #111827);
+    padding: 16px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* LOGO TEXT */
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #facc15;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  /* NAV LINKS */
+  .nav-links {
+    display: flex;
+    gap: 22px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* HOVER EFFECT */
+  .nav-links a:hover {
+    background: rgba(250, 204, 21, 0.15);
+    color: #facc15;
+    transform: translateY(-2px);
+  }
+  
+  /* LOGIN BUTTON */
+  .nav-btn {
+    background: #facc15;
+    color: #111827;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-btn:hover {
+    background: #fde047;
+    transform: scale(1.05);
+  }
+  
+  /* MENU ICON */
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #facc15;
+    cursor: pointer;
+  }
+  
+  /* MOBILE VIEW */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 75px;
+      right: 20px;
+      background: #0f172a;
+      flex-direction: column;
+      width: 220px;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+      display: none;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links a {
+      padding: 10px 12px;
+    }
+  
+    /* Hide Login Button in Mobile */
+    .nav-btn {
+      display: none;
+    }
+  }
