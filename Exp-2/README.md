@@ -10,8 +10,10 @@ This folder contains **4 React SPA experiments** created using different UI appr
 📁 Folder: `bootstrap-doctor-appointment`  
 A simple doctor appointment booking UI made using **Bootstrap components**.
 
-📸 Screenshot:  
-![Bootstrap Doctor Appointment](./screenshots/bootstrap-doctor-appointment.png)
+<p align="center">
+  <img src="./screenshots/bootstrap-doctor-appointment1.png" width="45%" />
+  <img src="./screenshots/bootstrap-doctor-appointment2.png" width="45%" />
+</p>
 
 ---
 
