@@ -7,17 +7,17 @@
   transition: background 0.3s ease;
 }
 
-/* Light Theme */
+
 .light {
   background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
 }
 
-/* Dark Theme */
+
 .dark {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 
-/* Card */
+
 .card {
   background: white;
   padding: 40px 50px;
@@ -29,13 +29,13 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Dark card */
+
 .dark .card {
   background: #1e1e1e;
   color: #ffffff;
 }
 
-/* Headings */
+
 .card h1 {
   margin-bottom: 10px;
 }
@@ -45,7 +45,7 @@
   opacity: 0.8;
 }
 
-/* Button */
+
 button {
   padding: 12px 22px;
   font-size: 16px;
