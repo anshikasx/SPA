@@ -53,6 +53,7 @@ Contact Page
 
 ## Project Structure
 
+```bash
 student-portal/
 ├── src/
 │   ├── assets/
