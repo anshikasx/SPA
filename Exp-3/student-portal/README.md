@@ -37,16 +37,16 @@ It demonstrates client-side routing and component-based design, allowing smooth 
 
 ## Output Screenshots
 
-Profile Page  
+### Profile Page
 ![Profile Page](./assets/my_profile.png)
 
-Skills Page  
+### Skills Page
 ![Skills Page](./assets/my_skills.png)
 
-Projects Page  
+### Projects Page
 ![Projects Page](./assets/my_projects.png)
 
-Contact Page  
+### Contact Page
 ![Contact Page](./assets/my_contact.png)
 
 ---
