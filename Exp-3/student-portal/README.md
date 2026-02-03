@@ -4,16 +4,6 @@
 This project is a Student Portfolio Single Page Application (SPA) developed using React and React Router.  
 It demonstrates client-side routing and component-based design, allowing smooth navigation without page reloads.
 
-![My Profile](./assets/my_profile.png)
-
-![My Skills](./assets/my_skills.png)
-
-![My Projects](./assets/my_projects.png)
-
-
-![My contact](./assets/my_contact.png)
-
-
 ---
 
 ## Tech Stack
@@ -35,21 +25,50 @@ It demonstrates client-side routing and component-based design, allowing smooth 
 
 ---
 
+---
+
+## Application Pages
+- Profile – Displays personal details and professional links
+- Skills – Shows technical and soft skills
+- Projects – Displays academic and development projects
+- Contact – Shows contact information
+
+---
+
+## Output Screenshots
+
+Profile Page  
+![Profile Page](./assets/my_profile.png)
+
+Skills Page  
+![Skills Page](./assets/my_skills.png)
+
+Projects Page  
+![Projects Page](./assets/my_projects.png)
+
+Contact Page  
+![Contact Page](./assets/my_contact.png)
+
+---
+
 ## Project Structure
+
 student-portal/
-├─ src/
-│   ├─ assets/
-│   │   └─ my_photo.png
-│   ├─ components/
-│   │   └─ Header.js
-│   ├─ pages/
-│   │   ├─ Profile.js
-│   │   ├─ Skills.js
-│   │   ├─ Projects.js
-│   │   ├─ Contact.js
-│   │   └─ Dashboard.js
-│   ├─ App.js
-│   ├─ App.css
-│   └─ index.js
-└─ README.md
+├── src/
+│   ├── assets/
+│   │   └── my_photo.png
+│   ├── components/
+│   │   └── Header.js
+│   ├── pages/
+│   │   ├── Profile.js
+│   │   ├── Skills.js
+│   │   ├── Projects.js
+│   │   ├── Contact.js
+│   │   └── Dashboard.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+└── README.md
+
+
 
