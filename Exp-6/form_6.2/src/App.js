@@ -18,21 +18,26 @@ export default function App() {
 
     let valid = true;
 
-    // Email validation
+    /* ---------- EMAIL VALIDATION ---------- */
+
     const emailPattern =
-      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|in|[a-z]{2,})$/;
+      /^[a-zA-Z0-9]+@[a-zA-Z0-9.-]+\.(com|in|[a-z]{2,})$/;
 
     const beforeAt = email.split("@")[0];
 
-    if (beforeAt.includes(".com")) {
-      setEmailError("'.com' cannot appear before '@'");
+    // No special character allowed before @
+    if (!/^[a-zA-Z0-9]+$/.test(beforeAt)) {
+      setEmailError("No special characters allowed before '@'");
       valid = false;
-    } else if (!emailPattern.test(email)) {
+    }
+    // Proper email format
+    else if (!emailPattern.test(email)) {
       setEmailError("Enter valid email (.com / .in / country code)");
       valid = false;
     }
 
-  
+    /* ---------- PASSWORD VALIDATION ---------- */
+
     const passwordPattern =
       /^[A-Z](?=.*[0-9])(?=.*[!@#$%^&*]).{4,}$/;
 
@@ -43,6 +48,7 @@ export default function App() {
       valid = false;
     }
 
+    /* ---------- SUCCESS ---------- */
     if (valid) {
       setSuccessMsg("Form submitted successfully ✅");
     }
@@ -105,7 +111,7 @@ export default function App() {
 /* ---------- STYLES ---------- */
 const styles = {
   page: {
-    backgroundColor: "#f5efe6", // beige background
+    backgroundColor: "#f5efe6",
     height: "100vh",
     display: "flex",
     justifyContent: "center",
@@ -123,7 +129,7 @@ const styles = {
 
   heading: {
     textAlign: "center",
-    color: "#6b4226", // brown
+    color: "#6b4226",
     marginBottom: "20px",
   },
 

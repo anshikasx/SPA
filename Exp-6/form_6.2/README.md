@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Email & Password Validation Form (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Project Overview
+This project is a **Registration/Login Form** built using **React.js** demonstrating form handling with **Controlled Components**.
 
-## Available Scripts
+The form accepts an Email ID and Password, performs validation checks, and displays a success message upon valid submission.
 
-In the project directory, you can run:
+The application focuses on input validation logic and clean user interface design.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎯 Features
+- Controlled inputs using React `useState`
+- Email validation with custom rules
+- Password strength validation
+- Error messages displayed below inputs
+- Reset button to clear form
+- Success message after valid submission
+- Centered aesthetic UI design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✅ Validation Rules
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📧 Email Validation
+- Only letters and numbers allowed before `@`
+- No special characters allowed before `@`
+- Must follow valid email format
+- Allowed domains:
+  - `.com`
+  - `.in`
+  - country code domains
 
-### `npm run build`
+**Examples**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+✔ `anshika123@gmail.com`  
+✔ `user45@yahoo.in`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+❌ `anshika.s@gmail.com`  
+❌ `anshika_12@gmail.com`  
+❌ `anshika!@gmail.com`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 🔐 Password Validation
+Password must:
+- Start with a **capital letter**
+- Contain at least **one number**
+- Contain at least **one special character**
+- Minimum length: **5 characters**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Example:
+✔ `Aabc@1`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- HTML5
+- CSS3 (Inline Styling)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📸 Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔹 Login Form
+![Login Form](./src/assets/form.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 🔹 Filled Form With Wrong Format
+![Filled Form](./src/assets/wrong.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🧠 Learning Outcomes
+- Understanding Controlled Components in React
+- Form validation using regular expressions
+- Managing multiple state variables
+- Handling submit and reset events
+- Designing responsive UI layouts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 👩‍💻 Author
+**Anshika Sinha**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📄 License
+This project is created for academic and learning purposes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 🔹 Alert Message
+![Alert Message](./src/assets/correct.png)
