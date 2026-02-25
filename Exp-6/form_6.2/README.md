@@ -74,6 +74,11 @@ Example:
 
 ---
 
+### 🔹 Filled Form With Correct Format
+![Alert Message](./src/assets/correct.png)
+
+---
+
 ## 🧠 Learning Outcomes
 - Understanding Controlled Components in React
 - Form validation using regular expressions
@@ -90,6 +95,3 @@ Example:
 
 ## 📄 License
 This project is created for academic and learning purposes.
-
-### 🔹 Alert Message
-![Alert Message](./src/assets/correct.png)
