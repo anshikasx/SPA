@@ -1,0 +1,83 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:"Poppins",sans-serif;
+  background:linear-gradient(135deg,#89f7fe,#66a6ff);
+}
+
+/* CENTER FORM */
+.app-container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* FORM CARD */
+.form-card{
+  background:white;
+  padding:35px;
+  width:360px;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+.form-card h2{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+input, textarea, select{
+  width:100%;
+  padding:12px;
+  margin:12px 0;
+  border-radius:10px;
+  border:1px solid #ddd;
+}
+
+.radio{
+  display:flex;
+  gap:25px;
+  margin:10px 0;
+}
+
+.skills{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+
+.skills label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* BUTTONS */
+.btn-group{
+  display:flex;
+  gap:12px;
+  margin-top:15px;
+}
+
+.submit{
+  flex:1;
+  background:#4facfe;
+  border:none;
+  color:white;
+  padding:12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.cancel{
+  flex:1;
+  background:#e0e0e0;
+  border:none;
+  padding:12px;
+  border-radius:8px;
+  cursor:pointer;
+}
